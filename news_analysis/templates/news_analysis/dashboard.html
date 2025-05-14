@@ -1,0 +1,15 @@
+<!-- news_analysis/templates/news_analysis/dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Analysis Dashboard</title>
+</head>
+<body>
+    <h1>News Analysis Dashboard</h1>
+    <ul>
+        {% for item in data %}
+        <li>{{ item.video_title }} - Bias: {{ item.bias_score }} - Sentiment: {{ item.sentiment }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
